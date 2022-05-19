@@ -1,0 +1,30 @@
+@font-face {
+    font-family: "Meta";
+    src: url("../font/meta-normal.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* Reset Css */
+
+body {
+    font-family: "Meta", sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Meta;
+    background: #b3d2c2;
+}
+
+h1 {
+    color: #ca8d5a;
+}
+
+.card-header {
+    background: #3b7454;
+}
+
+.titulo {
+    align-items: center;
+}
