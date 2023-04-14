@@ -22,7 +22,7 @@ function combineArrays($tipoArray, $nomeArray)
 
 $TBS = new clsTinyButStrong;
 $TBS->Plugin(TBS_INSTALL, OPENTBS_PLUGIN);
-$template = 'Modelo de Ata.docx';
+$template = '../Modelo de Ata.docx';
 $TBS->LoadTemplate($template, OPENTBS_ALREADY_UTF8);
 $TBS->MergeBlock('blk1', $array_type1);
 $TBS->MergeBlock('blk2', $array_type2);
@@ -31,7 +31,7 @@ $TBS->MergeBlock('blk3', $array_type3);
 $TBS->PlugIn(OPENTBS_DELETE_COMMENTS);
 
 $save_as = (isset($_POST['save_as']) && (trim($_POST['save_as']) !== '') && ($_SERVER['SERVER_NAME'] == 'localhost')) ? trim($_POST['save_as']) : '';
-$output_file_name = str_replace('.', '_' . date('Y-m-d') . $save_as . '.', $template);
+$output_file_name = str_replace('.', '_' . date('Y-m-d') . $save_as . '.', 'Modelo de Ata.docx');
 if ($save_as === '') {
   $TBS->Show(OPENTBS_DOWNLOAD, $output_file_name);
   exit();
