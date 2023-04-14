@@ -34,7 +34,7 @@
             <h3 class="text-center fw-bold text-white">Formulário de Dados</h3>
           </div>
           <div class="card-body">
-            <form id="form1" method="post" action="../document.php">
+            <form id="form1" method="post" action="./document.php">
               <div class="mb-3 position-relative">
                 <label for="campo" class="form-label">Itens para Pauta</label>
                 <input type="text" class="form-control campo" placeholder="Ex: Elaboração para plano de ensino..." />
