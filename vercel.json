@@ -6,5 +6,15 @@
     "api/plugins/*.php": {
       "runtime": "vercel-php@0.5.3"
     }
-  }
+  },
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/api/index.php"
+    },
+    {
+      "src": "/document.php",
+      "dest": "/api/document.php"
+    }
+  ]
 }
