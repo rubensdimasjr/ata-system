@@ -7,13 +7,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Ata de Reunião</title>
 
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
   <!-- Style Index -->
-  <link rel="stylesheet" href="./assets/css/index.css">
+  <link rel="stylesheet" href="../assets/css/index.css">
 
   <script src="https://kit.fontawesome.com/cf4fb9e680.js" crossorigin="anonymous"></script>
-  <script type="text/javascript" src="./assets/js/jquery.js"></script>
+  <script type="text/javascript" src="../assets/js/jquery.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,7 @@
           <h1 class="fw-bold">SISTEMA DE EMISSÃO DE ATAS</h1>
         </div>
         <div class="col-lg-6 col-sm-12 text-center">
-          <img src="./assets/images/Horizontal-Colorida.png" width="75%" class="img-fluid" alt="Logo">
+          <img src="../assets/images/Horizontal-Colorida.png" width="75%" class="img-fluid" alt="Logo">
         </div>
       </div>
       <div class="col-lg-8 col-sm-12 mb-sm-3">
@@ -33,7 +34,7 @@
             <h3 class="text-center fw-bold text-white">Formulário de Dados</h3>
           </div>
           <div class="card-body">
-            <form id="form1" method="post" action="./document.php">
+            <form id="form1" method="post" action="../document.php">
               <div class="mb-3 position-relative">
                 <label for="campo" class="form-label">Itens para Pauta</label>
                 <input type="text" class="form-control campo" placeholder="Ex: Elaboração para plano de ensino..." />
@@ -84,9 +85,11 @@
     </div>
   </div>
 
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-  <script src="./assets/js/addItem.js"></script>
-  <script src="./assets/js/controleForm.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+  <script src="../assets/js/addItem.js"></script>
+  <script src="../assets/js/controleForm.js"></script>
 </body>
 
 </html>
