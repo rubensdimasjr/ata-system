@@ -22,7 +22,7 @@ function combineArrays($tipoArray, $nomeArray)
 
 $TBS = new clsTinyButStrong;
 $TBS->Plugin(TBS_INSTALL, OPENTBS_PLUGIN);
-$template = '../Modelo de Ata.docx';
+$template = __DIR__ . '/../Modelo de Ata.docx';
 $TBS->LoadTemplate($template, OPENTBS_ALREADY_UTF8);
 $TBS->MergeBlock('blk1', $array_type1);
 $TBS->MergeBlock('blk2', $array_type2);
