@@ -15,6 +15,10 @@
     {
       "src": "/document.php",
       "dest": "/api/document.php"
+    },
+    {
+      "src": "/Modelo de Ata.docx",
+      "dest": "/api/Modelo de Ata.docx"
     }
   ]
 }
