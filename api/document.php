@@ -1,7 +1,7 @@
 <?php
 
-include_once('./tbs_class.php');
-include_once('./plugins/tbs_plugin_opentbs.php');
+include_once __DIR__ . '/api/tbs_class.php';
+include_once __DIR__ . '/api/tbs_plugin_opentbs.php';
 
 $inputs = $_POST['input'];
 $detalhes = array($_POST['detalhes']);
