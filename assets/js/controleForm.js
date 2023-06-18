@@ -13,6 +13,7 @@ $('#form1').on( "submit", function( event ) {
       $('#form1').unbind("submit").submit();
     }
   });
+
 });
 
 /* $("#form2").on("submit", (e) => {

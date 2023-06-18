@@ -21,20 +21,25 @@
   <div class="container">
     <div class="row justify-content-center">
       <div class="row">
-        <div class="col-lg-6 col-sm-12 justify-content-center d-flex titulo ">
-          <h1 class="fw-bold">SISTEMA DE EMISSÃO DE ATAS</h1>
-        </div>
         <div class="col-lg-6 col-sm-12 text-center">
           <img src="./assets/images/Horizontal-Colorida.png" width="75%" class="img-fluid" alt="Logo">
         </div>
+        <div class="col-lg-6 col-sm-12 justify-content-center d-flex titulo">
+          <h1 class="fw-bold mb-3 mb-lg-0">SISTEMA DE EMISSÃO DE ATAS</h1>
+        </div>
       </div>
-      <div class="col-lg-8 col-sm-12 mb-sm-3">
+      <div class="col-lg-8 col-sm-12 mb-5">
         <div class="card mx-auto">
           <div class="card-header">
             <h3 class="text-center fw-bold text-white">Formulário de Dados</h3>
           </div>
           <div class="card-body">
             <form id="form1" method="post" action="./document.php">
+              <div class="mb-3">
+                <label for="titulo" class="form-label">Título</label>
+                <input type="text" class="form-control" name="titulo" placeholder="Titulo da Ata" minlength="5"
+                  required>
+              </div>
               <div class="mb-3 position-relative">
                 <label for="campo" class="form-label">Itens para Pauta</label>
                 <input type="text" class="form-control campo" placeholder="Ex: Elaboração para plano de ensino..." />
@@ -42,14 +47,12 @@
                   O campo não pode estar vazio!
                 </div>
               </div>
-
               <div class="mb-3 d-flex justify-content-end">
                 <button class="btn btn-success botao">
-                  Adicionar
+                  Adicionar Itens
                 </button>
               </div>
-              <div class="mb-3 lista">
-              </div>
+              <div class="mb-3 lista"></div>
               <div class="mb-3">
                 <label for="detalhes" id="detalhes" class="form-label">Detalhes</label>
                 <textarea class="form-control" name="detalhes" id="detalhes" cols="20" rows="10" required></textarea>
@@ -60,10 +63,15 @@
                 </div>
               </div>
               <div class="mb-3 position-relative">
-                <label for="campo" class="form-label">Membros da Ata</label>
-                <input type="text" class="form-control campo" placeholder="Ex: Professor..." disabled>
+                <label for="membros" class="form-label">Membros da Ata</label>
+                <select id="membros" class="form-select campo" disabled>
+                  <option disabled selected>Selecione membros para assinatura!</option>
+                  <option value="Professor Washington">Professor Washington</option>
+                  <option value="Professor Weverson">Professor Weverson</option>
+                  <option value="Professor Osmam">Professor Osmam</option>
+                </select>
                 <div class="invalid-tooltip">
-                  O campo não pode estar vazio!
+                  Selecione pelo menos um membro para assinatura!
                 </div>
               </div>
               <div class="mb-3 d-flex justify-content-start">
@@ -74,8 +82,9 @@
               <div class="mb-3 lista">
               </div>
               <div class="card-footer mt-2">
-                <div class="d-flex justify-content-center">
+                <div class="d-flex justify-content-center gap-2">
                   <input class="btn btn-primary" id="visualizar" type="submit" value="Baixar" disabled>
+                  <a href="/" class="btn btn-danger">Limpar</a>
                 </div>
               </div>
             </form>

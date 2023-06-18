@@ -3,13 +3,20 @@
 include_once 'tbs_class.php';
 include_once 'plugins/tbs_plugin_opentbs.php';
 
+if (empty($_POST)) {
+  echo "Sem variáveis de POST!";
+  exit;
+}
+
 $inputs = $_POST['input'];
 $detalhes = array($_POST['detalhes']);
+$titulo = array($_POST['titulo']);
 $assinaturas = $_POST['ass'];
 
 $array_type1 = combineArrays($inputs, "input");
 $array_type2 = array_combine(array("detalhes"), $detalhes);
 $array_type3 = combineArrays($assinaturas, "assinatura");
+$array_type4 = array_combine(array("titulo"), $titulo);
 
 function combineArrays($tipoArray, $nomeArray)
 {
@@ -27,6 +34,7 @@ $TBS->LoadTemplate($template, OPENTBS_ALREADY_UTF8);
 $TBS->MergeBlock('blk1', $array_type1);
 $TBS->MergeBlock('blk2', $array_type2);
 $TBS->MergeBlock('blk3', $array_type3);
+$TBS->MergeBlock('blk4', $array_type4);
 
 $TBS->PlugIn(OPENTBS_DELETE_COMMENTS);
 
