@@ -36,7 +36,7 @@ function envioDeDados(input, lista) {
   capturado = input.value;
 
   /* Verifica se dados podem ser adicionados */
-  if(!capturado){
+  if(!capturado || capturado === "Selecione membros para assinatura!"){
     $(input).addClass("is-invalid").focus();
   }else{
     // Cria a div com os itens como inputs
@@ -52,6 +52,8 @@ function envioDeDados(input, lista) {
         +'</div>'
         ).appendTo(lista);
       }
+
+      input.value = "";
     }else if(input == inputs[1]){
       let count = lista.childElementCount;
       for(i = 0; i < arrayLenght; i++){
@@ -63,7 +65,6 @@ function envioDeDados(input, lista) {
       }
     }
 
-    input.value = "";
     input.focus();
   }
 }

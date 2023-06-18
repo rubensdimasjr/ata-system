@@ -14,11 +14,11 @@ body {
     padding: 0;
     box-sizing: border-box;
     font-family: Meta;
-    background: #b3d2c2;
+    background: #e1ede0;
 }
 
 h1 {
-    color: #ca8d5a;
+    color: #1e6443;
 }
 
 .card-header {
@@ -27,4 +27,10 @@ h1 {
 
 .titulo {
     align-items: center;
+}
+
+@media (max-width: 575.98px) {
+    h1{
+        font-size: 1.5em;
+    }
 }
